@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Cabby</string>
+    <string name="splash_screen">Splash Screen</string>
+
 </resources>
