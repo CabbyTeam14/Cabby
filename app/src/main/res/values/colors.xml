@@ -6,5 +6,18 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
+<<<<<<< Updated upstream
     <color name="white">#FFFFFFFF</color>
+=======
+    <color name="white">#FFFFFF</color>
+
+    <color name="dark_blue">#14274E</color>
+
+    <color name="dark_grey">#222831</color>
+    <color name="grey">#393E46</color>
+    <color name="pastel_green">#00ADB5</color>
+    <color name="neon_green">#00FFF5</color>
+
+    <color name="text_view_color">#9BA4B4</color>
+>>>>>>> Stashed changes
 </resources>

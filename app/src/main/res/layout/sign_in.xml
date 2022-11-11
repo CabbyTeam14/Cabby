@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="177dp"
+        android:layout_height="70dp"
+        android:text="Sign in"
+        android:textColor="@color/white"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="65dp"
+        android:textSize="54dp"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:layout_below="@id/title"
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="@string/email"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:textColorHint="@color/text_view_color"
+        android:background="@drawable/textview_border"
+        android:padding="4dp"
+        android:drawableLeft="@drawable/ic_envelope_closed_foreground"
+        android:drawablePadding="3dp">
+    </EditText>
+
+    <EditText
+        android:layout_below="@+id/email"
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="@string/password"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@color/text_view_color"
+        android:background="@drawable/textview_border"
+        android:padding="4dp"
+        android:drawableLeft="@drawable/ic_lock_closed_foreground"
+        android:drawablePadding="3dp">
+    </EditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_below="@+id/password"
+        android:id="@+id/sign_in"
+        android:text="@string/sign_in"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/grey"
+        android:background="@drawable/button_radius"
+        android:textSize="30sp"
+        android:textAllCaps="false">
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+    <LinearLayout
+        android:id="@+id/sign_up_dialog"
+        android:orientation="horizontal"
+        android:layout_below="@id/sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/sign_up_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textColor="@color/white">
+        </TextView>
+
+        <TextView
+            android:id="@+id/sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create one"
+            android:textColor="@color/white"
+            android:layout_marginLeft="4dp"
+            android:textStyle="bold">
+        </TextView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:background="@mipmap/ic_logo_foreground"
+        android:layout_below="@id/sign_up_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp">
+
+    </ImageView>
+
+</RelativeLayout>

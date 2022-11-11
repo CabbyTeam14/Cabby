@@ -13,14 +13,37 @@
         android:theme="@style/Theme.Cabby"
         tools:targetApi="31">
         <activity
+<<<<<<< Updated upstream
             android:name=".MainActivity"
             android:exported="true">
+=======
+            android:name="com.example.cabby.activities.SignInActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.cabby.activities.SplashActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
+>>>>>>> Stashed changes
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+<<<<<<< Updated upstream
 
+=======
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+>>>>>>> Stashed changes
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
