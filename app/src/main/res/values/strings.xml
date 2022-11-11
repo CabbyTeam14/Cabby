@@ -1,11 +1,8 @@
 <resources>
     <string name="app_name">Cabby</string>
-<<<<<<< Updated upstream
-=======
     <string name="splash_screen">Splash Screen</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="sign_in">Sign in</string>
 
->>>>>>> Stashed changes
 </resources>
