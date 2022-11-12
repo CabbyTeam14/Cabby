@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background"
+
+    >
+
+    <include
+        layout="@layout/toolbar">
+
+    </include>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/accountImageView"
+        android:src="@color/white"
+        android:layout_marginTop="100dp">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/accountImageView"
+        android:text="@string/name_text"
+        android:textColor="@color/text_color"
+        android:textSize="45sp"
+        android:layout_marginTop="20dp"
+        >
+
+    </TextView>
+
+    <Button
+        android:id="@+id/my_info_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accountImageView"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/user_icon"
+        android:text="@string/my_information"
+        android:textColor="@color/text_color"
+        android:gravity="left|center"
+        tools:ignore="RtlHardcoded"
+        android:textAllCaps="false"
+        android:drawableRight="@drawable/right_arrow">
+    </Button>
+
+    <Button
+        android:id="@+id/favourite_routes_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_info_btn"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/location_icon"
+        android:text="@string/fav_routes"
+        android:textColor="@color/text_color"
+        android:gravity="left|center"
+        tools:ignore="RtlHardcoded"
+        android:textAllCaps="false"
+        android:drawableRight="@drawable/right_arrow">
+    </Button>
+
+    <Button
+        android:id="@+id/reports_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/favourite_routes_btn"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/reports_icon"
+        android:text="@string/reports"
+        android:textColor="@color/text_color"
+        android:gravity="left|center"
+        tools:ignore="RtlHardcoded"
+        android:textAllCaps="false"
+        android:drawableRight="@drawable/right_arrow">
+    </Button>
+
+    <Button
+        android:id="@+id/sign_out_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reports_btn"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/sign_out_icon"
+        android:text="@string/sign_out"
+        android:textColor="@color/text_color"
+        android:gravity="left|center"
+        tools:ignore="RtlHardcoded"
+        android:textAllCaps="false"
+        android:drawableRight="@drawable/right_arrow">
+    </Button>
+
+
+</RelativeLayout>

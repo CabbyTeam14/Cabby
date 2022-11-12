@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Cabby</string>
+    <string name="splash_screen">Splash Screen</string>
+    <string name="my_information">My Information</string>
+    <string name="fav_routes">Favourite routes</string>
+    <string name="sign_out">Sign out</string>
+    <string name="reports">Reports</string>
+    <string name="name_text">Name</string>
 </resources>
