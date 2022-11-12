@@ -16,4 +16,6 @@
     <color name="neon_green">#00FFF5</color>
 
     <color name="text_view_color">#9BA4B4</color>
+    <color name="dark_background">#222831</color>
+    <color name="text_color">#FFFFFFFF</color>
 </resources>
