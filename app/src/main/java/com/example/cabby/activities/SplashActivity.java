@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.cabby.MainActivity;
 import com.example.cabby.R;
 
 import java.util.Timer;
@@ -17,7 +18,7 @@ public class SplashActivity extends Activity {
         setContentView(R.layout.splash);
         int SPLASH_TIME_OUT = 2000;
 
-        Intent signInIntent = new Intent(SplashActivity.this, SignInActivity.class);
+        Intent signInIntent = new Intent(SplashActivity.this, MainActivity.class);
         new Timer().schedule(new TimerTask() {
             @Override
             public void run() {
