@@ -1,8 +1,14 @@
 package com.example.cabby.activities;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
+import androidx.appcompat.widget.AppCompatButton;
+
+import com.example.cabby.MainActivity;
 import com.example.cabby.R;
 
 public class SignInActivity extends Activity {
@@ -11,6 +17,13 @@ public class SignInActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_in);
+        AppCompatButton btn = findViewById(R.id.sign_in);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SignInActivity.this, MainActivity.class));
+            }
+        });
     }
 
     @Override
