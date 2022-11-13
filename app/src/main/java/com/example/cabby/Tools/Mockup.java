@@ -9,9 +9,9 @@ public class Mockup {
 
     public static List<Ride> getRides(){
         ArrayList<Ride> rides = new ArrayList<Ride>();
-        Ride r1 = new Ride("Test1", "Test1", "Test1", "Test1", "/C:/Users/lukac/Downloads/luka.png");
-        Ride r2 = new Ride("Test1", "Test1", "Test1", "Test1", "\"C:\\Users\\lukac\\Downloads\\luka.png\"");
-        Ride r3 = new Ride("Test1", "Test1", "Test1", "Test1", "\"C:\\Users\\lukac\\Downloads\\luka.png\"");
+        Ride r1 = new Ride("Test1", "Test1", "Test1", "Test1", "Luka Djordjevic", "SUV");
+        Ride r2 = new Ride("Test2", "Test2", "Test2", "Test2", "Marko Janosevic", "Sports");
+        Ride r3 = new Ride("Test3", "Test3", "Test3", "Test3", "Milos Cuturic", "Limo");
         rides.add(r1);
         rides.add(r2);
         rides.add(r3);
