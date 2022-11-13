@@ -22,4 +22,6 @@
     <string name="nav_inbox">Inbox</string>
     <string name="nav_ride_history">Ride History</string>
     <string name="nav_profile">Profile</string>
+    <string name="offline_driver">Offline</string>
+    <string name="online_driver">Online</string>
 </resources>
