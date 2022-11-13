@@ -20,6 +20,20 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".activities.DriverMainActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.PassengerRideHistoryActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".activities.RegisterActivity"
             android:exported="false">
             <meta-data
@@ -27,7 +41,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".SignInActivity"
+            android:name=".activities.DrawerBaseActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.SignInActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -41,7 +62,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".SplashActivity"
+            android:name=".activities.SplashActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"

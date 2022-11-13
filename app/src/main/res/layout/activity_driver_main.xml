@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DriverMainActivity"
+    android:background="@color/dark_background"
+    tools:ignore="UseSwitchCompatOrMaterialXml">
+
+
+    <TextView
+        android:id="@+id/online_driver_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:text="@string/offline_driver"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true">
+
+    </TextView>
+
+    <Switch
+        android:id="@+id/online_driver_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/passenger_ride_history_border"
+        android:textColor="@color/text_color"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+    </Switch>
+
+</RelativeLayout>
