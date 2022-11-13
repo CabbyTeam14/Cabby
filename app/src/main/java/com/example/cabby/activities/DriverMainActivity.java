@@ -13,28 +13,18 @@ import com.example.cabby.R;
 
 public class DriverMainActivity extends AppCompatActivity {
 
+
+
     @SuppressLint("UseSwitchCompatOrMaterialCode")
+    private Switch online_switch;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_driver_main);
 
         TextView online_text = findViewById(R.id.online_driver_text);
-        Switch online_switch = findViewById(R.id.online_driver_switch);
-        online_switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @SuppressLint("UseCompatLoadingForDrawables")
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (online_switch.isChecked()){
-                    online_text.setText(R.string.online_driver);
-                    online_switch.setBackground(getDrawable(R.drawable.lightblue_border));
-                }
-                else {
-                    online_text.setText(R.string.offline_driver);
-                    online_switch.setBackground(getDrawable(R.drawable.passenger_ride_history_border));
-                }
-            }
-        });
+        online_switch = findViewById(R.id.online_driver_switch);
+        online_toggle_listener(online_text);
 
     }
 
@@ -66,5 +56,22 @@ public class DriverMainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+    }
+
+    private void online_toggle_listener(TextView online_text){
+        online_switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @SuppressLint("UseCompatLoadingForDrawables")
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (online_switch.isChecked()){
+                    online_text.setText(R.string.online_driver);
+                    online_switch.setBackground(getDrawable(R.drawable.lightblue_border));
+                }
+                else {
+                    online_text.setText(R.string.offline_driver);
+                    online_switch.setBackground(getDrawable(R.drawable.passenger_ride_history_border));
+                }
+            }
+        });
     }
 }

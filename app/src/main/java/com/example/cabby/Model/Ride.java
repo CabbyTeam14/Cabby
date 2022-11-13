@@ -1,20 +1,49 @@
 package com.example.cabby.Model;
 
 
-public class Ride {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Ride implements Parcelable {
     private String from;
     private String to;
     private String date;
     private String time;
-    private String driverImage;
+    private String driver;
 
-    public Ride(String from, String to, String date, String time, String driverImage) {
+
+
+    private String car_type;
+
+    public Ride(String from, String to, String date, String time, String driver, String car_type) {
         this.from = from;
         this.to = to;
         this.date = date;
         this.time = time;
-        this.driverImage = driverImage;
+        this.driver = driver;
+        this.car_type = car_type;
     }
+
+    protected Ride(Parcel in) {
+        from = in.readString();
+        to = in.readString();
+        date = in.readString();
+        time = in.readString();
+        driver = in.readString();
+        car_type = in.readString();
+    }
+
+    public static final Creator<Ride> CREATOR = new Creator<Ride>() {
+        @Override
+        public Ride createFromParcel(Parcel in) {
+            return new Ride(in);
+        }
+
+        @Override
+        public Ride[] newArray(int size) {
+            return new Ride[size];
+        }
+    };
 
     public String getFrom() {
         return from;
@@ -48,13 +77,34 @@ public class Ride {
         this.time = time;
     }
 
-    public String getDriverImage() {
-        return driverImage;
+    public String getDriver() {
+        return driver;
     }
 
-    public void setDriverImage(String driverImage) {
-        this.driverImage = driverImage;
+    public void setDriver(String driver) {
+        this.driver = driver;
+    }
+
+    public String getCar_type() {
+        return car_type;
+    }
+
+    public void setCar_type(String car_type) {
+        this.car_type = car_type;
     }
 
 
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeString(from);
+        parcel.writeString(to);
+        parcel.writeString(date);
+        parcel.writeString(time);
+        parcel.writeString(driver);
+    }
 }
