@@ -28,7 +28,8 @@
         android:textColorHint="@color/text_view_color"
         android:background="@drawable/textview_border"
         android:padding="4dp"
-        android:drawableLeft="@drawable/ic_envelope_closed_foreground"
+        android:drawableLeft="@drawable/envelope_closed"
+        android:drawableTint="@color/text_view_color"
         android:drawablePadding="3dp">
     </EditText>
 
@@ -44,7 +45,8 @@
         android:textColorHint="@color/text_view_color"
         android:background="@drawable/textview_border"
         android:padding="4dp"
-        android:drawableLeft="@drawable/ic_lock_closed_foreground"
+        android:drawableLeft="@drawable/lock_close"
+        android:drawableTint="@color/text_view_color"
         android:drawablePadding="3dp">
     </EditText>
 
