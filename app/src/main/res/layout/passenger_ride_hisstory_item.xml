@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/passenger_ride_history_border"
+    android:padding="20dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/passenger_rides_date_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignStart="@id/passenger_rides_time_box"
+        >
+        <TextView
+            android:id="@+id/passenger_rides_date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date_label_text"
+            android:textColor="@color/text_color">
+
+        </TextView>
+        <TextView
+            android:id="@+id/passenger_rides_date_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21.01.01"
+            android:textColor="@color/text_color">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passenger_rides_time_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/passenger_rides_date_box"
+        >
+        <TextView
+            android:id="@+id/passenger_rides_time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_label_text"
+            android:textColor="@color/text_color">
+
+        </TextView>
+        <TextView
+            android:id="@+id/passenger_rides_time_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21.01.01"
+            android:textColor="@color/text_color">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passenger_rides_from_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/passenger_rides_date_box"
+        android:layout_alignStart="@id/passenger_rides_to_box"
+        >
+        <TextView
+            android:id="@+id/passenger_rides_from_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/from_label_text"
+            android:textColor="@color/text_color">
+
+        </TextView>
+        <TextView
+            android:id="@+id/passenger_rides_from_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21.01.01"
+            android:textColor="@color/text_color">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/passenger_rides_to_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/passenger_rides_time_box"
+        android:layout_below="@id/passenger_rides_from_box"
+        android:layout_marginLeft="10dp"
+        >
+        <TextView
+            android:id="@+id/passenger_rides_to_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_label_text"
+            android:textColor="@color/text_color">
+
+        </TextView>
+        <TextView
+            android:id="@+id/passenger_rides_to_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21.01.01"
+            android:textColor="@color/text_color">
+
+        </TextView>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/passengers_driver_image"
+        android:layout_alignParentEnd="true"
+        android:src="@color/text_color"
+
+        >
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+</RelativeLayout>

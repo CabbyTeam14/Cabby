@@ -1,30 +1,28 @@
 package com.example.cabby.activities;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
+
+import com.example.cabby.Adapters.PassengerRideAdapter;
 import com.example.cabby.R;
 
-import java.util.Timer;
-import java.util.TimerTask;
+public class PassengerRideHistoryActivity extends AppCompatActivity {
 
-public class SplashActivity extends Activity {
+    private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.splash);
-        int SPLASH_TIME_OUT = 2000;
+        setContentView(R.layout.activity_passenger_ride_history);
 
-        Intent signInIntent = new Intent(SplashActivity.this, PassengerRideHistoryActivity.class);
-        new Timer().schedule(new TimerTask() {
-            @Override
-            public void run() {
-                startActivity(signInIntent);
-                finish();
-            }
-        }, SPLASH_TIME_OUT);
+        PassengerRideAdapter adapter = new PassengerRideAdapter(PassengerRideHistoryActivity.this);
+        listView = findViewById(R.id.passenger_ride_history_list);
+        listView.setAdapter(adapter);
+
     }
 
     @Override

@@ -10,4 +10,8 @@
     <string name="sign_out">Sign out</string>
     <string name="reports">Reports</string>
     <string name="name_text">Name</string>
+    <string name="date_label_text">Date: </string>
+    <string name="time_label_text">Time: </string>
+    <string name="from_label_text">From: </string>
+    <string name="to_label_text">To: </string>
 </resources>
