@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
-        <item android:id="@+id/nav_passenger_profile"
-            android:title="Profile"
-            android:icon="@drawable/user_icon">
 
+        <item android:id="@+id/nav_home"
+            android:title="@string/nav_home"
+            android:icon="@drawable/user_icon">
         </item>
 
-        <item android:id="@+id/nav_passenger_ride_history"
-            android:title="Ride History"
+        <item android:id="@+id/nav_inbox"
+            android:title="@string/nav_inbox"
             android:icon="@drawable/user_icon">
-
         </item>
+
+        <item android:id="@+id/nav_ride_history"
+            android:title="@string/nav_ride_history"
+            android:icon="@drawable/user_icon">
+        </item>
+
+        <item android:id="@+id/nav_profile"
+            android:title="@string/nav_profile"
+            android:icon="@drawable/user_icon">
+        </item>
+
     </group>
 </menu>
