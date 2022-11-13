@@ -7,11 +7,6 @@
 
     >
 
-    <include
-        layout="@layout/toolbar">
-
-    </include>
-
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -43,6 +38,7 @@
         android:layout_marginTop="100dp"
         android:background="@android:color/transparent"
         android:drawableLeft="@drawable/user_icon"
+        android:drawableTint="@color/white"
         android:text="@string/my_information"
         android:textColor="@color/text_color"
         android:gravity="left|center"

@@ -5,10 +5,6 @@
     android:layout_height="match_parent"
     android:background="@color/dark_background">
 
-    <include
-        layout="@layout/toolbar">
-
-    </include>
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="150dp"
@@ -41,6 +37,7 @@
         android:layout_marginTop="100dp"
         android:background="@android:color/transparent"
         android:drawableLeft="@drawable/user_icon"
+        android:drawableTint="@color/white"
         android:text="@string/my_information"
         android:textColor="@color/text_color"
         android:gravity="left|center"
@@ -55,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/driver_my_info_btn"
         android:background="@android:color/transparent"
-        android:drawableLeft="@drawable/statistics_icon_foreground"
+        android:drawableLeft="@drawable/statistics"
         android:text="@string/statistics"
         android:textColor="@color/text_color"
         android:gravity="left|center"
