@@ -4,17 +4,18 @@
 
         <item android:id="@+id/nav_home"
             android:title="@string/nav_home"
-            android:icon="@drawable/user_icon">
+            android:icon="@drawable/home">
         </item>
 
         <item android:id="@+id/nav_inbox"
             android:title="@string/nav_inbox"
-            android:icon="@drawable/user_icon">
+            android:icon="@drawable/envelope_closed">
         </item>
 
         <item android:id="@+id/nav_ride_history"
             android:title="@string/nav_ride_history"
-            android:icon="@drawable/user_icon">
+            android:icon="@drawable/clock"
+            android:iconTint="@color/text_color">
         </item>
 
         <item android:id="@+id/nav_profile"
