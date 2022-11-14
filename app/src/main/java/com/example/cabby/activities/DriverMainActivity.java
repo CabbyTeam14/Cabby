@@ -10,17 +10,20 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 import com.example.cabby.R;
+import com.example.cabby.databinding.ActivityDriverMainBinding;
 
-public class DriverMainActivity extends AppCompatActivity {
+public class DriverMainActivity extends DrawerDriverActivity {
 
-
+    ActivityDriverMainBinding driverMainBinding;
 
     @SuppressLint("UseSwitchCompatOrMaterialCode")
     private Switch online_switch;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_driver_main);
+        driverMainBinding = ActivityDriverMainBinding.inflate(getLayoutInflater());
+        setContentView(driverMainBinding.getRoot());
+        allocateActivityTitle("Home");
 
         TextView online_text = findViewById(R.id.online_driver_text);
         online_switch = findViewById(R.id.online_driver_switch);

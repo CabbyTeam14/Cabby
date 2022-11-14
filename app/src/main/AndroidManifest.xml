@@ -13,6 +13,27 @@
         android:theme="@style/Theme.Cabby"
         tools:targetApi="31">
         <activity
+            android:name=".activities.PassengerMainActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.DrawerPassengerActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activities.DrawerDriverActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".activities.DriverRideDetailsActivity"
             android:exported="false">
             <meta-data

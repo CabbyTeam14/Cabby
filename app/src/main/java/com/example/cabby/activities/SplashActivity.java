@@ -18,7 +18,7 @@ public class SplashActivity extends Activity {
         setContentView(R.layout.splash);
         int SPLASH_TIME_OUT = 2000;
 
-        Intent signInIntent = new Intent(SplashActivity.this, DriverRideHistoryActivity.class);
+        Intent signInIntent = new Intent(SplashActivity.this, SignInActivity.class);
 
         new Timer().schedule(new TimerTask() {
             @Override

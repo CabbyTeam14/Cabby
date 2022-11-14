@@ -11,7 +11,7 @@ import com.example.cabby.Model.Ride;
 import com.example.cabby.Tools.Mockup;
 import com.example.cabby.databinding.ActivityDriverRideHistoryBinding;
 
-public class DriverRideHistoryActivity extends DrawerBaseActivity {
+public class DriverRideHistoryActivity extends DrawerDriverActivity {
 
     ActivityDriverRideHistoryBinding activityDriverRideHistoryBinding;
     ListView listView;
@@ -23,6 +23,7 @@ public class DriverRideHistoryActivity extends DrawerBaseActivity {
         activityDriverRideHistoryBinding = ActivityDriverRideHistoryBinding.
                 inflate(getLayoutInflater());
         setContentView(activityDriverRideHistoryBinding.getRoot());
+        allocateActivityTitle("Ride History");
 
         DriverRideAdapter adapter = new DriverRideAdapter(DriverRideHistoryActivity.this);
         listView = activityDriverRideHistoryBinding.driverRideHistoryList;
