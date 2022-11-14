@@ -1,17 +1,16 @@
 package com.example.cabby.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.app.Activity;
 import android.os.Bundle;
 
 import com.example.cabby.R;
 
-public class PassengerAccountActivity extends AppCompatActivity {
+public class RegisterActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_passenger_account);
+        setContentView(R.layout.register);
     }
 
     @Override

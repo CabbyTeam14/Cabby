@@ -4,12 +4,19 @@
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="sign_in">Sign in</string>
+    <string name="register">Register</string>
 
     <string name="my_information">My Information</string>
     <string name="fav_routes">Favourite routes</string>
+    <string name="statistics">Statistics</string>
     <string name="sign_out">Sign out</string>
     <string name="reports">Reports</string>
     <string name="name_text">Name</string>
+    <string name="surname_text">Surname</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_in_dialog">Already have an account?</string>
     <string name="date_label_text">Date: </string>
     <string name="time_label_text">Time: </string>
     <string name="from_label_text">From: </string>
@@ -22,4 +29,10 @@
     <string name="nav_inbox">Inbox</string>
     <string name="nav_ride_history">Ride History</string>
     <string name="nav_profile">Profile</string>
+    <string name="offline_driver">Offline</string>
+    <string name="online_driver">Online</string>
+    <string name="driver_on_ride_title">Driver: </string>
+    <string name="car_type">Car type: </string>
+    <string name="rate_btn">Rate</string>
+
 </resources>

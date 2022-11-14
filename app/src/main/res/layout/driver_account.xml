@@ -3,15 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_background"
+    android:background="@color/dark_background">
 
-    >
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
-        android:id="@+id/accountImageView"
+        android:id="@+id/driverAccountImageView"
         android:src="@color/white"
         android:layout_marginTop="100dp">
 
@@ -21,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/accountImageView"
+        android:layout_below="@id/driverAccountImageView"
         android:text="@string/name_text"
         android:textColor="@color/text_color"
         android:textSize="45sp"
@@ -31,10 +30,10 @@
     </TextView>
 
     <Button
-        android:id="@+id/my_info_btn"
+        android:id="@+id/driver_my_info_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/accountImageView"
+        android:layout_below="@id/driverAccountImageView"
         android:layout_marginTop="100dp"
         android:background="@android:color/transparent"
         android:drawableLeft="@drawable/user_icon"
@@ -48,13 +47,13 @@
     </Button>
 
     <Button
-        android:id="@+id/favourite_routes_btn"
+        android:id="@+id/driver_statistics_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/my_info_btn"
+        android:layout_below="@id/driver_my_info_btn"
         android:background="@android:color/transparent"
-        android:drawableLeft="@drawable/location_icon"
-        android:text="@string/fav_routes"
+        android:drawableLeft="@drawable/statistics"
+        android:text="@string/statistics"
         android:textColor="@color/text_color"
         android:gravity="left|center"
         tools:ignore="RtlHardcoded"
@@ -63,10 +62,10 @@
     </Button>
 
     <Button
-        android:id="@+id/reports_btn"
+        android:id="@+id/driver_reports_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/favourite_routes_btn"
+        android:layout_below="@id/driver_statistics_btn"
         android:background="@android:color/transparent"
         android:drawableLeft="@drawable/reports_icon"
         android:text="@string/reports"
@@ -78,10 +77,10 @@
     </Button>
 
     <Button
-        android:id="@+id/sign_out_btn"
+        android:id="@+id/driver_sign_out_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/reports_btn"
+        android:layout_below="@id/driver_reports_btn"
         android:background="@android:color/transparent"
         android:drawableLeft="@drawable/sign_out_icon"
         android:text="@string/sign_out"
