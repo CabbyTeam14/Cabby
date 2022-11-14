@@ -1,15 +1,21 @@
 package com.example.cabby.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.cabby.Adapters.DriverRideAdapter;
+import com.example.cabby.Model.Ride;
+import com.example.cabby.Tools.Mockup;
 import com.example.cabby.databinding.ActivityDriverRideHistoryBinding;
 
 public class DriverRideHistoryActivity extends DrawerBaseActivity {
 
     ActivityDriverRideHistoryBinding activityDriverRideHistoryBinding;
     ListView listView;
+    Intent rideDetailIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +27,10 @@ public class DriverRideHistoryActivity extends DrawerBaseActivity {
         DriverRideAdapter adapter = new DriverRideAdapter(DriverRideHistoryActivity.this);
         listView = activityDriverRideHistoryBinding.driverRideHistoryList;
         listView.setAdapter(adapter);
+
+        rideDetailIntent = new Intent(DriverRideHistoryActivity.this,
+                DriverRideDetailsActivity.class);
+        addListViewListener();
     }
 
     @Override
@@ -51,5 +61,16 @@ public class DriverRideHistoryActivity extends DrawerBaseActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+    }
+
+    private void addListViewListener(){
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Ride pickedRide = Mockup.getRides().get(i);
+                rideDetailIntent.putExtra("ride", pickedRide);
+                startActivity(rideDetailIntent);
+            }
+        });
     }
 }
