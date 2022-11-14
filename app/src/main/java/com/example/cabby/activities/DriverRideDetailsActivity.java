@@ -7,13 +7,18 @@ import android.widget.TextView;
 
 import com.example.cabby.Model.Ride;
 import com.example.cabby.R;
+import com.example.cabby.databinding.ActivityDriverRideDetailsBinding;
 
-public class DriverRideDetailsActivity extends AppCompatActivity {
+public class DriverRideDetailsActivity extends DrawerDriverActivity {
+
+    ActivityDriverRideDetailsBinding driverRideDetailsBinding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_driver_ride_details);
+        driverRideDetailsBinding = ActivityDriverRideDetailsBinding.inflate(getLayoutInflater());
+        setContentView(driverRideDetailsBinding.getRoot());
+        allocateActivityTitle("Ride details");
         initializeData();
     }
 

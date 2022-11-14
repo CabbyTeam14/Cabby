@@ -13,9 +13,11 @@ import com.example.cabby.Model.Ride;
 import com.example.cabby.R;
 import com.example.cabby.Tools.Mockup;
 import com.example.cabby.databinding.ActivityMainBinding;
+import com.example.cabby.databinding.ActivityPassengerRideHistoryBinding;
 
-public class PassengerRideHistoryActivity extends AppCompatActivity {
+public class PassengerRideHistoryActivity extends DrawerPassengerActivity {
 
+    ActivityPassengerRideHistoryBinding passengerRideHistoryBinding;
     private ListView listView;
     private Intent ride_detail_intent;
 
@@ -23,7 +25,10 @@ public class PassengerRideHistoryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_passenger_ride_history);
+        passengerRideHistoryBinding = ActivityPassengerRideHistoryBinding.
+                inflate(getLayoutInflater());
+        setContentView(passengerRideHistoryBinding.getRoot());
+        allocateActivityTitle("Ride history");
 
         PassengerRideAdapter adapter = new PassengerRideAdapter(PassengerRideHistoryActivity.this);
         listView = findViewById(R.id.passenger_ride_history_list);

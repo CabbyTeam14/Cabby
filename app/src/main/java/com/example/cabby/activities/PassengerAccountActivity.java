@@ -5,13 +5,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.cabby.R;
+import com.example.cabby.databinding.ActivityPassengerAccountBinding;
 
-public class PassengerAccountActivity extends AppCompatActivity {
+public class PassengerAccountActivity extends DrawerPassengerActivity {
+
+    ActivityPassengerAccountBinding passengerAccountBinding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_passenger_account);
+        passengerAccountBinding = ActivityPassengerAccountBinding.inflate(getLayoutInflater());
+        setContentView(passengerAccountBinding.getRoot());
+        allocateActivityTitle("Your profile");
     }
 
     @Override
