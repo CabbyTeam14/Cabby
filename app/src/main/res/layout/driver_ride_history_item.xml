@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/passenger_ride_history_border"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/driver_rides_date_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignStart="@id/driver_rides_time_box"
+        >
+        <TextView
+            android:id="@+id/driver_rides_date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date_label_text"
+            android:textColor="@color/text_color">
+
+        </TextView>
+        <TextView
+            android:id="@+id/driver_rides_date_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21.01.01"
+            android:textColor="@color/text_color">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/driver_rides_time_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/driver_rides_date_box"
+        >
+        <TextView
+            android:id="@+id/driver_rides_time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_label_text"
+            android:textColor="@color/text_color">
+
+        </TextView>
+        <TextView
+            android:id="@+id/driver_rides_time_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21.01.01"
+            android:textColor="@color/text_color">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/driver_rides_from_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/driver_rides_date_box"
+        android:layout_alignStart="@id/driver_rides_to_box"
+        >
+        <TextView
+            android:id="@+id/driver_rides_from_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/from_label_text"
+            android:textColor="@color/text_color">
+
+        </TextView>
+        <TextView
+            android:id="@+id/driver_rides_from_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21.01.01"
+            android:textColor="@color/text_color">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/driver_rides_to_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/driver_rides_time_box"
+        android:layout_below="@id/driver_rides_from_box"
+        android:layout_marginLeft="60dp"
+        >
+        <TextView
+            android:id="@+id/driver_rides_to_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to_label_text"
+            android:textColor="@color/text_color">
+
+        </TextView>
+        <TextView
+            android:id="@+id/driver_rides_to_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21.01.01"
+            android:textColor="@color/text_color">
+
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>
