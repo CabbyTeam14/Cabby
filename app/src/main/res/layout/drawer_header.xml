@@ -6,9 +6,9 @@
     android:orientation="vertical">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@mipmap/ic_logo_foreground"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/logo"
         android:layout_gravity="center_horizontal" />
 
 </LinearLayout>
