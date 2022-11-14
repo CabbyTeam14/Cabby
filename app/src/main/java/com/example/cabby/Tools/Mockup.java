@@ -1,5 +1,6 @@
 package com.example.cabby.Tools;
 
+import com.example.cabby.Model.Message;
 import com.example.cabby.Model.Ride;
 
 import java.util.ArrayList;
@@ -34,6 +35,20 @@ public class Mockup {
 
 
         return rides;
+    }
+
+    public static List<Message> getPassengerMessages(){
+        ArrayList<Message> messages = new ArrayList<Message>();
+        Message m1 = new Message("Jovan", "Stigao sam", "11.11.2022.");
+        Message m2 = new Message("Vukasin", "Stizem", "10.11.2022.");
+        Message m3 = new Message("Vlada", "Dolazim", "09.11.2022.");
+
+        messages.add(m1);
+        messages.add(m2);
+        messages.add(m3);
+
+        return messages;
+
     }
 
 }

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark_background"
+    android:padding="20dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/passenger_chat_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/passengers_chat_preview_image"
+            android:layout_alignParentEnd="true"
+            android:src="@color/text_color"
+            android:layout_marginRight="15dp"
+
+            >
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <LinearLayout
+            android:id="@+id/sender_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/passenger_chat_preview_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_text"
+                android:textStyle="bold"
+                android:textColor="@color/text_color">
+
+            </TextView>
+            <TextView
+                android:id="@+id/passenger_chat_preview_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:textColor="@color/text_color">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/passenger_chat_preview_datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10.11.2022."
+                android:textColor="@color/text_color">
+            </TextView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
