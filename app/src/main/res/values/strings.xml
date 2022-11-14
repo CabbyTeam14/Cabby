@@ -34,5 +34,6 @@
     <string name="driver_on_ride_title">Driver: </string>
     <string name="car_type">Car type: </string>
     <string name="rate_btn">Rate</string>
+    <string name="passengers">Passengers:</string>
 
 </resources>

@@ -62,7 +62,5 @@ public class PassengerRideDetailsActivity extends AppCompatActivity {
         date_detail.setText(picked_ride.getDate());
         time_detail.setText(picked_ride.getTime());
         car_type_detail.setText(picked_ride.getCar_type());
-
-
     }
 }

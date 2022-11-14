@@ -30,8 +30,6 @@ public class PassengerRideHistoryActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
         ride_detail_intent = new Intent(PassengerRideHistoryActivity.this, PassengerRideDetailsActivity.class);
         addListViewListener();
-
-
     }
 
     @Override
