@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.widget.AppCompatButton;
 
+import com.example.cabby.MainActivity;
 import com.example.cabby.R;
 
 public class SignInActivity extends Activity {
@@ -21,7 +22,7 @@ public class SignInActivity extends Activity {
         signIn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(SignInActivity.this,
-                        PassengerMainActivity.class));
+                        MainActivity.class));
             }
         });
 
