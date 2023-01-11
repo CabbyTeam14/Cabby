@@ -21,8 +21,9 @@ public class SignInActivity extends Activity {
         AppCompatButton signIn = (AppCompatButton) findViewById(R.id.sign_in);
         signIn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+
                 startActivity(new Intent(SignInActivity.this,
-                        MainActivity.class));
+                        MainActivity.class).putExtra("role", "PASSENGER"));
             }
         });
 

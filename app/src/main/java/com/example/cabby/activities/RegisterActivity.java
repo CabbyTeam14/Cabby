@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.widget.AppCompatButton;
 
+import com.example.cabby.MainActivity;
 import com.example.cabby.R;
 
 public class RegisterActivity extends Activity {
@@ -21,7 +22,7 @@ public class RegisterActivity extends Activity {
         register.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(RegisterActivity.this,
-                        DriverMainActivity.class));
+                        MainActivity.class).putExtra("role", "DRIVER"));
             }
         });
 

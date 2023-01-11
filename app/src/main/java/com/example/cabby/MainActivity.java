@@ -3,6 +3,7 @@ package com.example.cabby;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -11,6 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.cabby.Fragments.DriverAccountFragment;
 import com.example.cabby.Fragments.PassengerAccountFragment;
 import com.example.cabby.Fragments.PassengerInboxFragment;
 import com.example.cabby.Fragments.PassengerMainFragment;
@@ -21,6 +23,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
 public class MainActivity extends DrawerBaseActivity {
+    private String role;
     private BottomNavigationView bottomNavigationView;
 
     @Override
@@ -28,6 +31,8 @@ public class MainActivity extends DrawerBaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         replaceFragment(new PassengerMainFragment());
+        Intent intent = getIntent();
+        role = intent.getStringExtra("role");
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_nav);
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @SuppressLint("NonConstantResourceId")
@@ -45,7 +50,12 @@ public class MainActivity extends DrawerBaseActivity {
                         replaceFragment(new PassengerRideHistoryFragment());
                         break;
                     case R.id.profile_item:
-                        replaceFragment(new PassengerAccountFragment());
+                        if (role.equals("PASSENGER")){
+                            replaceFragment(new PassengerAccountFragment());
+                        } else {
+                            replaceFragment(new DriverAccountFragment());
+                        }
+
                         break;
                 }
 
